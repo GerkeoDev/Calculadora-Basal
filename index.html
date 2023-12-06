@@ -2,29 +2,34 @@
 <html>
     <head>
         <title>
-            Calculadora BASAL
+            Calculadora Basal
         </title>
+        <link rel="stylesheet" href="style.css"/><!--Vincular CSS-->
     </head>
     <body>
-        <div>
-            <div>
-                <h1>
-                    Calculadora BASAL
-                </h1>
-                <input type="number" placeholder="Ingrese texto"/>
-                <p>* Debe completar todos los datos</p>
-                <button>Calcular</button>
-                <p>71cc/h</p>
-                <p>m+m/2 : 105cc/h</p>
+        <div id="contenedor1">
+            <div id="calculadora">
+                <div class="contenido">
+                    <h1>
+                        Calculadora Basal
+                    </h1>
+                    <input type="number" placeholder="Ingrese el peso en Kg"/>
+                    <p class="item" id="mensajeerror1">* Debe completar todos los datos</p>
+                    <button class="item" id="calcular">Calcular</button>
+                    <p class="clase1 item resultado">71cc/h</p>
+                    <p class="clase1 item resultado">m+m/2 : 105cc/h</p>
+                </div>
             </div>
-            <div>
-                <h1>
-                    ¿Cómo se calcula?
-                </h1>
-                <ul>
-                    <li>Cuando el niño tiene hasta 30kg: Se utiliza el calculo de Holliday-Segar.</li>
-                    <li>Cuando el niño tiene mas de 30kg: Se calcula la hidratación basal usando el método de superficie corporal</li>
-                </ul>
+            <div id="detalle">
+                <div class="contenido">
+                    <h1>
+                        ¿Cómo se calcula?
+                    </h1>
+                    <ul>
+                        <li>Cuando el niño tiene hasta 30kg: Se utiliza el calculo de Holliday-Segar.</li>
+                        <li>Cuando el niño tiene mas de 30kg: Se calcula la hidratación basal usando el método de superficie corporal</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </body>
