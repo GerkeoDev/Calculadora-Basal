@@ -35,16 +35,17 @@ button:active {
 }
 #contenedor1{
     width: 900px;
-  height: 500px;
-  text-align: center;
-  /* Estas 3 lineas se encargan de centrar el div vertical y horizontalmente */
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  border-radius: 10px;
-  overflow: hidden; 
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+    height: 500px;
+    text-align: center;
+    /* Estas 3 lineas se encargan de centrar el div vertical y horizontalmente */
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
     0 10px 10px rgba(0,0,0,0.22);
+    
 }
 #calculadora{
     background: rgb(55, 56, 61);
