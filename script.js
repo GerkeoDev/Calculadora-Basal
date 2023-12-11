@@ -7,7 +7,14 @@ let ERROR = document.getElementById('mensajeerror1');
 let DIA = document.getElementById('dia');
 let FLU = document.getElementById('flu');
 let MAN = document.getElementById('man');
+let SC1500 = document.getElementById('sc*1500');
+let SC2000 = document.getElementById('sc*2000');
 let input = document.getElementById('peso')
+
+let METODO = document.getElementById('metodo');
+let TITULOMETODO = document.getElementById('titulometodo');
+let SEGAR = document.getElementById('segar');
+let SUPERF = document.getElementById('superficie');
 
 
 boton.addEventListener('click', calcular)
@@ -29,6 +36,12 @@ function calcular(){
         DIA.style.display = "none"
         FLU.style.display = "none"
         MAN.style.display = "none"
+        SC1500.style.display = "none"
+        SC2000.style.display = "none"
+        SEGAR.style.display = "none"
+        SUPERF.style.display = "none"
+        METODO.style.display = "block"
+        TITULOMETODO.innerHTML = "¿Cómo se calcula?"
     }
     
     
@@ -55,7 +68,15 @@ function calcular(){
         DIA.style.display = "block"
         FLU.style.display = "block"
         MAN.style.display = "block"
+        SC1500.style.display = "none"
+        SC2000.style.display = "none"
         console.log("segar", valor)
+
+        TITULOMETODO.innerHTML = "Método Holliday-Segar"
+        SEGAR.style.display = "block"
+        SUPERF.style.display = "none"
+        METODO.style.display = "none"
+
     }
     function superficie(valor){
         let resultado
@@ -64,15 +85,21 @@ function calcular(){
         console.log("El resultado es: ", resultado)
         console.log("SC * 1500: ",resultado*1500)
         console.log("SC * 2000: ",resultado*2000)
-        //SOLUCIONAR-----------------------------------------------------------------------------------------------------
         DIA.innerHTML = "Resultado: " + resultado.toFixed(2)
-        FLU.innerHTML = "SC * 1500: " + (resultado*1500).toFixed(0)
-        MAN.innerHTML = "SC * 2000: " + (resultado*2000).toFixed(0)
+        SC1500.innerHTML = "SC * 1500: " + (resultado*1500).toFixed(0)
+        SC2000.innerHTML = "SC * 2000: " + (resultado*2000).toFixed(0)
         DIA.style.display = "none"
-        FLU.style.display = "block"
-        MAN.style.display = "block"
-        //---------------------------------------------------------------------------------------------------------------
+        FLU.style.display = "none"
+        MAN.style.display = "none"
+        SC1500.style.display = "block"
+        SC2000.style.display = "block"
         console.log("superficie", valor)
+
+        TITULOMETODO.innerHTML = "Método de superficie corporal"
+        SUPERF.style.display = "block"
+        SEGAR.style.display = "none"
+        METODO.style.display = "none"
+
     }
     
 }

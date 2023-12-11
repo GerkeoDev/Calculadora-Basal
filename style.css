@@ -3,6 +3,15 @@
 body{
     font-family: 'Silkscreen', sans-serif;
     background-color:rgb(42, 44, 48);
+    /*Fondo de Mr Jagger
+
+    background: url('https://pbs.twimg.com/media/FLKZlKfXoAkQOVH.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    */
 }
 
 h1{
@@ -60,15 +69,18 @@ button:active {
     width: 50%;
     height: 100%;
     float: left;
-    color: #f6f5f7;
+    color: aqua;
 }
 #mensajeerror1{ /*ID del primer mensaje de error*/
     color: red;
     font-weight: bold;
     display: none;
 }
+#titulometodo{/*Clase de los resultados*/
+    color: white;
+}
 .resultado{
-    color: #0A81D1;
+    color: white;
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 5px;
@@ -82,6 +94,6 @@ button:active {
     overflow: hidden;
     padding: 40px;
 }
-.clase1{/*Clase de los resultados*/
-    color: skyblue;
+.infometodo{/*Clase de los metodos*/
+    display: none;
 }
